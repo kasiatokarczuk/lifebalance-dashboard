@@ -1,1 +1,1 @@
-to start server type: node index.js
+To start server type: node index.js
