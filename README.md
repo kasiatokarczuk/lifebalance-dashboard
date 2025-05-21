@@ -1,4 +1,4 @@
-**logowanie go githuba**
+**logowanie go githuba**  
 sudo apt install gh  
 gh auth status  
 gh auth login  
