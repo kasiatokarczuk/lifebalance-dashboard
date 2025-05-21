@@ -7,7 +7,7 @@ i tam juz klikac i wybrac opcje zeby w przegladarce se zalgowac :))))
 
 git clone https://github.com/kasiatokarczuk/lifebalance-dashboard.git  
 
-zeby pobrac:   
+zeby pobrac (to juz robic w tym katalogu z projektem):   
 sudo apt install nodejs npm  
 
 potem sprawdzenie czy to pobrane dziala:  
