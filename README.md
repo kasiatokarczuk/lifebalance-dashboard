@@ -1,3 +1,5 @@
+git clone https://github.com/kasiatokarczuk/lifebalance-dashboard.git  
+
 zeby pobrac:   
 sudo apt install nodejs npm  
 
