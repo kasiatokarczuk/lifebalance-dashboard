@@ -12,3 +12,17 @@ node index.js
 
 potem to w wyszukiwarce:   
 http://localhost:3000  
+
+
+
+a jak nie bedzie dzialac to trzeba inaczej to nodejs i npm pobrac: 
+- sudo apt remove nodejs npm
+- curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+- source ~/.bashrc
+- command -v nvm
+- nvm install --lts
+- nvm use --lts
+- node -v
+- npm -v
+
+
