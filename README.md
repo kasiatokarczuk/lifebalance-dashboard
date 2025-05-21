@@ -1,3 +1,5 @@
+spr czy jest git zainstalowany  
+
 **logowanie go githuba**  
 sudo apt install gh  
 gh auth status  
