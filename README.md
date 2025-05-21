@@ -1,3 +1,10 @@
+**logowanie go githuba**
+sudo apt install gh  
+gh auth status  
+gh auth login  
+i tam juz klikac i wybrac opcje zeby w przegladarce se zalgowac :))))
+
+
 git clone https://github.com/kasiatokarczuk/lifebalance-dashboard.git  
 
 zeby pobrac:   
