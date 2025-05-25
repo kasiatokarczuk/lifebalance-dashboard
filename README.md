@@ -46,7 +46,7 @@ potem sprawdzialam (wpisujac npm -v) czy mam to npm i co ciekawe mialam takze ni
 potem weszlam w projekt i juz elegancko sie stronka odpalala na tym localhost:3000    
 zeby miec visuala to w folderze projektu trzeba wpisac -> code .    
 
-aleeee zeby to zadzialalo to trzeba najpiew wejsc sobie po protstu w apke visuala i zainstalowac rozszerzenie "Remote - WSL"    
+aleeee zeby to zadzialalo to trzeba najpiew wejsc sobie po protstu w apke visuala i zainstalowac rozszerzenie "WSL"    
 - W VS Code przejdź do zakładki Extensions (rozszerzenia).
 - Wyszukaj i zainstaluj: WSL
 
