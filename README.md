@@ -38,16 +38,15 @@ a jak nie bedzie dzialac to trzeba inaczej to nodejs i npm pobrac:
 
 --------------------------------------------------------
 URUCHOMIENIE NA WINDOWSIE -> NA WSL 
-wchodzimy na terminal, na gorze okienka po lewej stronie obok plusika na strzalke i wybieramy ubuntu  
-potem trzeba znowu sie zalgowac jak wczesniej na github 
-git clone https://github.com/kasiatokarczuk/lifebalance-dashboard.git    
-potem nie wchodzac jeszzce w projekt zainstalowalam node -> sudo apt install nodejs
-potem sprawdzialam (wpisujac npm -v) czy mam to npm i co ciekawe mialam takze nie instalowalam
-potem weszlam w projekt i juz elegancko sie stronka odpalala na tym localhost:3000  
-zeby miec visuala to w folderze projektu trzeba wpisac -> code .  
+wchodzimy na terminal, na gorze okienka po lewej stronie obok plusika na strzalke i wybieramy ubuntu    
+potem trzeba znowu sie zalgowac jak wczesniej na github   
+git clone https://github.com/kasiatokarczuk/lifebalance-dashboard.git      
+potem nie wchodzac jeszzce w projekt zainstalowalam node -> sudo apt install nodejs  
+potem sprawdzialam (wpisujac npm -v) czy mam to npm i co ciekawe mialam takze nie instalowalam  
+potem weszlam w projekt i juz elegancko sie stronka odpalala na tym localhost:3000    
+zeby miec visuala to w folderze projektu trzeba wpisac -> code .    
 
-
-aleeee zeby to zadzialalo to trzeba najpiew wejsc sobie po protstu w apke visuala i zainstalowac rozszerzenie "Remote - WSL"  
+aleeee zeby to zadzialalo to trzeba najpiew wejsc sobie po protstu w apke visuala i zainstalowac rozszerzenie "Remote - WSL"    
 - W VS Code przejdź do zakładki Extensions (rozszerzenia).
 - Wyszukaj i zainstaluj: WSL
 
