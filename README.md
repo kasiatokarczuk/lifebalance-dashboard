@@ -37,7 +37,7 @@ a jak nie bedzie dzialac to trzeba inaczej to nodejs i npm pobrac:
 
 
 --------------------------------------------------------
-URUCHOMIENIE NA WINDOWSIE -> NA WSL 
+URUCHOMIENIE NA WINDOWSIE -> NA WSL   
 wchodzimy na terminal, na gorze okienka po lewej stronie obok plusika na strzalke i wybieramy ubuntu    
 potem trzeba znowu sie zalgowac jak wczesniej na github   
 git clone https://github.com/kasiatokarczuk/lifebalance-dashboard.git      
