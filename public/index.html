@@ -4,21 +4,68 @@
   <meta charset="UTF-8">
   <title>Dashboard Zespołu</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-  <h1>Dashboard Zespołu</h1>
-  <div class="card">
-    <h2>Liczba zadań: 10</h2>
-    <p>Wykonane: 6</p>
-    <p>Postęp: 60%</p>
-  </div>
-  <div class="card">
-    <h2>Aktywne zadania</h2>
-    <ul>
-      <li>🔧 Dokończyć serwer</li>
-      <li>🎨 Zrobić stylizację CSS</li>
-      <li>🧠 Opisać projekt</li>
-    </ul>
-  </div>
+  <h1>Dashboard Zespołu</h1
 </body>
+
+
+<p>Wypita ilość: <span id="water-count">0</span> ml</p>
+<button onclick="addWater()">+250ml</button>
+<canvas id="waterChart" width="400" height="200"></canvas>
+
+<script>
+  function addWater() {
+    fetch('/api/water', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ amount: 250 })
+    })
+    .then(res => res.json())
+    .then(data => {
+      console.log('Zapisano:', data);
+      loadWater(); // Załaduj nowe dane do wykresu
+    });
+  }
+
+  // Wczytaj dane z API i narysuj wykres
+  function loadWater() {
+    fetch('/api/water')
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById("water-count").innerText =
+          data.reduce((sum, e) => sum + e.amount, 0);
+        updateChart(data);
+      });
+  }
+
+  // Inicjalizacja po załadowaniu strony
+  document.addEventListener('DOMContentLoaded', loadWater);
+</script>
+
+<script>
+  let chart;
+
+  function updateChart(data) {
+    const labels = data.map(entry => new Date(entry.date).toLocaleString());
+    const values = data.map(entry => entry.amount);
+
+    if (chart) chart.destroy();
+
+    chart = new Chart(document.getElementById('waterChart'), {
+      type: 'bar',
+      data: {
+        labels,
+        datasets: [{
+          label: 'Woda (ml)',
+          data: values,
+          backgroundColor: 'rgba(0, 123, 255, 0.5)',
+        }]
+      }
+    });
+  }
+</script>
+
+
 </html>
